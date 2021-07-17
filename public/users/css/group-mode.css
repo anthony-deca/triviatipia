@@ -1,0 +1,150 @@
+    #navbar{
+    background-color: #def2f9;
+}
+.navbar{
+    padding: 1rem 3rem 1rem 3rem !important;
+    }
+    #logo{
+        font-family: 'Akaya Telivigala', cursive !important;
+        font-size: 2rem !important;
+        font-weight: 200 !important;
+        color: #ff8a00;
+    }
+    
+    li.nav-item.active{
+        border-top: 3px solid #ff8a00;
+        margin-right: 1rem;
+        color: black;
+    }
+    
+    li.nav-item.active:hover{
+        border-top: 3px solid black;
+        color: #ff8a00 !important;
+    }
+    a.nav-link:hover{
+    color: #ff8a00 !important;
+    }
+    a.dropdown-item:hover{
+        color: #ff8a00 !important;
+    }
+    
+    /* toggler for dark and light theme */
+    .toggle-checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      .toggle-slot {
+        position: relative;
+        height: 2.5em;
+        width: 5.2em;
+        border: 5px solid #e4e7ec;
+        border-radius: 5em;
+        background-color: white;
+        box-shadow: 0px 10px 25px #e4e7ec;
+        transition: background-color 250ms;
+      }
+      
+      .toggle-checkbox:checked ~ .toggle-slot {
+        background-color: #374151;
+      }
+      
+      .toggle-button {
+        transform: translate(2.75em, 0.25em);
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 50%;
+        background-color: #ff8a00;
+        box-shadow: inset 0px 0px 0px 0.25em var(--baby-blue);
+        transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+      }
+      
+      .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+        background-color: #485367;
+        box-shadow: inset 0px 0px 0px 0.25em white;
+        transform: translate(0.5em, 0.2em);
+      }
+      
+      .sun-icon {
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        color: #ff8a00;
+      }
+      
+      .sun-icon-wrapper {
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        opacity: 1;
+        transform: translate(0.45em, 0.25em) rotate(15deg);
+        transform-origin: 50% 50%;
+        transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+      }
+      
+      .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+        opacity: 0;
+        transform: translate(0.5em, 0.5em) rotate(0deg);
+      }
+      
+      .moon-icon {
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        color: white;
+      }
+      
+      .moon-icon-wrapper {
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        opacity: 0;
+        transform: translate(2em, 1em) rotate(0deg);
+        transform-origin: 50% 50%;
+        transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+      }
+      
+      .toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+        opacity: 1;
+        transform: translate(3em, 0.2em) rotate(-15deg);
+      }
+      input:checked + .slider {
+        transform: translateX(18px);
+      }
+
+
+main{
+    border: 1px dotted #ff8a00;
+    border-radius: 20px;
+    margin-top: 3rem;
+    padding: 3rem 5rem 3rem 5rem;
+    width: 60%;
+}
+.input-group{
+    width: 100%;
+}
+.start{
+    background: linear-gradient(#ff8a00, #e52e71);
+    color: #fff;
+}
+
+/* mobile responsiveness */
+@media only screen and (min-width:280px) and (max-width:768px){
+    main{
+        border: 0 !important;
+        border-radius: 0px !important;
+        margin-top: 3rem;
+        padding: 1rem 2rem 1rem 2rem !important;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    #configure{
+        font-size: 1.6rem;
+    }
+}
+    

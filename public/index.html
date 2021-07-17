@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--========== BOX ICONS ==========-->
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+	<!--========== CSS ==========-->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Responsive website food</title>
+</head>
+
+<body>
+
+	<!--========== SCROLL TOP ==========-->
+	<a href="#" class="scrolltop" id="scroll-top">
+		<i class='bx bx-chevron-up scrolltop__icon'></i>
+	</a>
+
+	<!--========== HEADER ==========-->
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="#" class="nav__logo">Triviatopia</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+					<li class="nav__item"><a href="#services" class="nav__link">Play</a></li>
+					<li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+
+					<li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class='bx bx-menu'></i>
+			</div>
+		</nav>
+	</header>
+
+	<main class="l-main">
+		<!--========== HOME ==========-->
+		<section class="home" id="home">
+			<div class="home__container bd-container bd-grid">
+				<div class="home__data">
+					<h1 class="home__title">Heyy Trivia Buff</h1>
+					<h2 class="home__subtitle">Try out our awesome <br> trivia game.</h2>
+					<form method="GET" action="/signup">
+						<input type="submit" class="button" value="Sign up">
+					</form>
+					<form method="GET" action="/login">
+						<input type="submit" class="button" value="Sign in">
+					</form>
+
+
+					<!-- <a href="#" class="button">Sign up</a> -->
+				</div>
+
+				<img src="assets/images/trivia.webp" alt="" class="home__img">
+			</div>
+		</section>
+
+
+		<!--========== ABOUT ==========-->
+		<section class="about section bd-container" id="about">
+			<div class="about__container  bd-grid">
+				<div class="about__data">
+					<span class="section-subtitle about__initial">About us</span>
+					<h2 class="section-title about__initial">We are big on <br> social</h2>
+					<p class="about__description">We've made an awesomely engaging trivia app focused on social
+						interactions. Give us a try.</p>
+					<a href="#" class="button">Explore</a>
+				</div>
+
+				<img src="assets/images/community.jpg" alt="" class="about__img">
+			</div>
+		</section>
+
+
+		<!--========== SERVICES ==========-->
+		<section class="services section bd-container" id="services">
+			<span class="section-subtitle">Offering</span>
+			<h2 class="section-title">Game Modes</h2>
+
+			<div class="services__container  bd-grid">
+				<div class="services__content">
+					<h3 class="services__title">Solo Mode</h3>
+					<p class="services__description">
+						Have fun challenging yourself to a plethora of interesting trivia questions across different
+						categories
+						including Entertainment, Sports, History and Science. The better you are, the higher you'll rank
+						on
+						our global leaderboards for each trivia category.
+					</p>
+				</div>
+
+				<div class="services__content">
+					<h3 class="services__title">Group Mode</h3>
+					<p class="services__description">
+						Go beyond individual games and compete with friends to see who knows the most in a particular
+						trivia category.
+						Start a private game and invite your friends to join via social media or make the game public
+						and compete with
+						other interested players that join the game.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!--========== CONTACT US ==========-->
+		<section class="contact section bd-container" id="contact">
+			<div class="contact__container bd-grid">
+				<div class="contact__data">
+					<span class="section-subtitle contact__initial">Let's talk</span>
+					<h2 class="section-title contact__initial">Contact us</h2>
+					<p class="contact__description">
+						If you have any problems with the app or want to partner with us or even have some interesting
+						ideas you think we should
+						explore, please feel free to contact us!
+					</p>
+				</div>
+
+				<div class="contact__button">
+					<a href="#" class="button">Contact us now</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<!--========== FOOTER ==========-->
+	<footer class="footer section bd-container">
+		<div class="footer__container bd-grid">
+			<div class="footer__content">
+				<a href="#" class="footer__logo">Triviatopia</a>
+				<span class="footer__description">Game Company</span>
+				<div>
+					<a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+					<a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+					<a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+				</div>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Services</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Games</a></li>
+					<li><a href="#" class="footer__link">Trivia</a></li>
+					<li><a href="#" class="footer__link">Social</a></li>
+					<li><a href="#" class="footer__link">Community</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Information</h3>
+				<ul>
+					<li><a href="#" class="footer__link">Event</a></li>
+					<li><a href="#" class="footer__link">Contact us</a></li>
+					<li><a href="#" class="footer__link">Privacy policy</a></li>
+					<li><a href="#" class="footer__link">Terms of services</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__content">
+				<h3 class="footer__title">Address</h3>
+				<ul>
+					<li>Lagos - Nigeria</li>
+					<li>Sangotedo</li>
+					<li>triviatopia@email.com</li>
+				</ul>
+			</div>
+		</div>
+
+		<p class="footer__copy">&#169; 2021 Triviatopia inc. All right reserved</p>
+	</footer>
+
+	<!--========== SCROLL REVEAL ==========-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!--========== MAIN JS ==========-->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
